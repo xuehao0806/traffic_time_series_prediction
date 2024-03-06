@@ -118,13 +118,13 @@ if __name__ == "__main__":
     test_labels = torch.Tensor(data['test_labels'])
     means = data['means']
     stds = data['stds']
-    # b. Construct LSTM model
+
+    # b. Construct model
     input_dim = 1  # Default number of features is 1
     hidden_dim = 32  # hidden layer dimension
     output_seq_len = 6  # Output dimension
     model = LSTMModel(input_dim, hidden_dim, output_seq_len)
-    vis_len = 100 # Length of time for visualization
-    vis_step = 6 # Prediction step number for visualization
+
     # c. Train the model
     learning_rate = 0.005
     epochs = 20
@@ -134,4 +134,6 @@ if __name__ == "__main__":
     evaluate_model(model, test_inputs, test_labels, means, stds)
 
     # e. Plot model prediction results
+    vis_len = 100 # Length of time for visualization
+    vis_step = 6 # Prediction step number for visualization
     plot_predictions(model, test_inputs, test_labels, means, stds, vis_len, vis_step)
