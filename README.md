@@ -1,13 +1,22 @@
-# Project Setup and Execution Guide
+# Tutorial for Time-series Prediction
 
-This guide provides step-by-step instructions on how to set up and run this project within an Anaconda environment using the Spyder IDE.
+This tutorial is designed to addressing the challenge of **multi-step forecasting** in **traffic time series data**. The key features of this project include:
 
-## Prerequisites
+1. Sliding windows for sampling traffic sequence data, which enhances the model's ability to understand and predict future trends effectively.
+2. A comprehensive suite of deep learning models - RNN, GRU, LSTM, and Transformer - to facilitate robust modeling, training, and evaluation of forecasting performances.
+
+If you find this project useful, please consider giving it a star :star: — it helps!
+
+## Project Setup and Execution Guide
+
+This guide provides step-by-step instructions on how to set up and run this project within an **Anaconda environment** using the **Spyder IDE**.
+
+### **0. Prerequisites**
 
 - Anaconda distribution installed on your machine.
 - Basic familiarity with conda environments and Spyder IDE.
 
-## 1. **Create and Activate a Virtual Environment for Your Deep Learning Project:**
+### **1. Create and Activate a Virtual Environment:**
 
 Open your **Anaconda prompt** (check it in the Start Menu). Use the following command to navigate to the root directory of this project.
 
@@ -33,7 +42,7 @@ Once the environment is activated, you will see the following prompt indicating 
 (Deep_Learning) <path\to\your\file> :
 ```
 
-## 2. Installing Required Packages
+### 2. Installing Required Packages
 
 Install the required packages using the following command:
 
@@ -47,7 +56,7 @@ Upon successful installation of the packages, you would typically see a series o
 Successfully installed package1-version package2-version  ...
 ````
 
-## 3. Installing and Verifying Pytorch
+### 3. Installing and Verifying Pytorch
 
 PyTorch is the key package for our project, renowned as one of the most popular Python libraries for deep learning. The installation commands can vary based on the operating system and computing platform you're using. To find the specific installation command that fits your setup, please visit [PyTorch&#39;s official installation guide](https://pytorch.org/get-started/locally/).
 
@@ -85,7 +94,7 @@ or
 2.2.1+cpu
 ````
 
-## 4. Start the Project in Spyder
+### 4. Start the Project in Spyder
 
 There are two main approaches to working with Spyder for running your Python project. Here's how you can proceed with either:
 
@@ -104,9 +113,13 @@ spyder
 * Once Spyder opens, you can set the root directory by navigating to `File > Open` and selecting your project's root directory.
 * To ensure Spyder is using the correct interpreter from your environment, go to `Preferences > Python interpreter > Use the following Python interpreter` and select the Python interpreter associated with your `Deep_Learning` environment. This might require navigating to your environment's directory and selecting the python executable.
 
-## 5. Running the Files
+### 5. Running the Files
 
 Before running the main project file, you need to execute the preprocessing script. In Spyder, open the `preprocessing.py` file while your virtual environment is activated. You can run the script by pressing F5 or clicking the run button.
 
 Finally, to execute the main project logic, open the `main.py` file in Spyder within the same virtual environment. Run the script by pressing F5 or using the run button.
+
+---
+Thank you for making it to the end! If you found this helpful, please don't forget to give us a star :star:!
+---
 
