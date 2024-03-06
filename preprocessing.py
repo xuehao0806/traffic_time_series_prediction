@@ -73,6 +73,9 @@ def create_and_save_seq2seq_dataset(file_path, file_name, month, target, input_s
              train_labels=train_labels, test_labels=test_labels, means=means, stds=stds)
     return print(f"Data saved as {output_name}")
 
-
+month = 1
+target = 'Observations'
+input_seq_len = 12
+output_seq_len = 6
 # Example usage of the function
-create_and_save_seq2seq_dataset("data/", "raw_data.csv", 1, "Observations", 12, 6)
+create_and_save_seq2seq_dataset("data/", "raw_data.csv", month, target, input_seq_len, output_seq_len)
