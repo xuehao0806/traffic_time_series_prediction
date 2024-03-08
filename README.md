@@ -1,4 +1,4 @@
-# Tutorial for Time-series Prediction
+# Tutorial for Traffic Time-series Prediction
 
 This tutorial is designed to addressing the challenge of **multi-step forecasting** in **traffic time series data**. The key features of this project include:
 
@@ -109,9 +109,8 @@ spyder
 
 * Open the Anaconda Navigator and select the `Home` tab.
 * Launch Spyder from the Navigator. This approach may not set your desired working directory automatically.
-
 * Once Spyder opens, you can set the root directory by navigating to `File > Open` and selecting your project's root directory.
-* To ensure Spyder is using the correct interpreter from your environment, go to `Preferences > Python interpreter > Use the following Python interpreter` and select the Python interpreter associated with your `Deep_Learning` environment. This might require navigating to your environment's directory and selecting the python executable.
+* To ensure Spyder is using the correct interpreter from your environment, go to `Tools > Preferences > Python interpreter > <Path to anaconda> / Anaconda3/envs/Deep_Learning` and select the Python interpreter associated with your `Deep_Learning` environment. This might require navigating to your environment's directory and selecting the python executable.
 
 ### 5. Running the Files
 
@@ -120,6 +119,9 @@ Before running the main project file, you need to execute the preprocessing scri
 Finally, to execute the main project logic, open the `main.py` file in Spyder within the same virtual environment. Run the script by pressing F5 or using the run button.
 
 ---
+
 Thank you for making it to the end! If you found this helpful, please don't forget to give us a star :star:!
----
+------------------------------------------------------------------------------------------------------
+
+
 
